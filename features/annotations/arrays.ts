@@ -15,3 +15,5 @@ const cars = carMakers[0];
 
 // FLexible Arrays
 const dateTime: (Date | string)[] = [new Date(), "Hello"];
+
+// Arrays ->  Collection of records with sort order
