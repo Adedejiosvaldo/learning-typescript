@@ -9,6 +9,17 @@ class Vehicle {
   }
 }
 
-const vehicle = new Vehicle();
+//Inheritance
+
+// when we have a class that extends to
+// another class,we can choose to overide
+// some methods
+class Car extends Vehicle {
+  drive(): void {
+    console.log("Waddup");
+  }
+}
+
+const vehicle = new Car();
 vehicle.drive();
 vehicle.honk();
