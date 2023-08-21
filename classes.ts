@@ -1,5 +1,14 @@
 // Class -> Blue print or definiton, we dont call it directly
 class Vehicle {
+  //   color: string = "red";
+  //   constructor(color: string) {
+  //     this.color = color;
+  //   }
+
+  //MEthod 2 of declaring constructor
+
+  constructor(public color: string) {}
+
   drive(): void {
     console.log("Driver Driving");
   }
@@ -16,7 +25,7 @@ class Vehicle {
 // some methods
 class Car extends Vehicle {
   drive(): void {
-    console.log("Waddup");
+    console.log();
   }
 }
 
@@ -30,6 +39,7 @@ vehicle.honk();
 // Protected -> This method can be called onl
 
 class House {
+  color: string;
   public build(): void {
     console.log("Get Building");
   }
