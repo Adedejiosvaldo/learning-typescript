@@ -24,12 +24,16 @@ class Vehicle {
 // another class,we can choose to overide
 // some methods
 class Car extends Vehicle {
+  constructor(public wheels: number, color: string) {
+    super(color);
+  }
+
   drive(): void {
     console.log();
   }
 }
 
-const vehicle = new Car();
+const vehicle = new Car(4, "red");
 vehicle.drive();
 vehicle.honk();
 
